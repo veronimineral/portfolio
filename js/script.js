@@ -1,15 +1,18 @@
-window.onload = function () {
-    alert("This page is in progress. Please don't jump to conclusions :>");
-}
+$('.sd').click(function () {
+    $('.hero, .content').addClass('scrolled');
+});
 
-var hamburger = document.querySelector(".hamburger");
-hamburger.addEventListener("click", function () {
-    document.querySelector(".page-header").classList.toggle("nav-opened");
-}, false);
+$('.hero').mousewheel(function (e) {
+    if (e.deltaY < 0) {
+        $('.hero, .content').addClass('scrolled');
+        return false;
+    }
+});
 
-$("#scrollbutton").click(function () {
-    $('html,body').animate({
-            scrollTop: $("#aboutme").offset().top
-        },
-        'toggle');
+$(window).mousewheel(function (e) {
+    if ($('.hero.scrolled').length) {
+        if ($(window).scrollTop() == 0 && e.deltaY > 0) {
+            $('.hero, .content').removeClass('scrolled');
+        }
+    }
 });

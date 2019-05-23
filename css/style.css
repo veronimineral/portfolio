@@ -1,72 +1,119 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700|Josefin+Sans:400,600,700,400italic,600italic);
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Signika+Negative&display=swap');
 
-html {
-    font-size: 62.5%;
+:root {
+    --light-pink: #be8596;
+    --dirty-pink: #8f6c7d;
+    --dirty-blue: #62749c;
 }
 
+
 body {
-    margin: 0;
-    padding: 0;
     font-family: 'Signika Negative', sans-serif;
-    font-weight: 300;
-    font-size: 1.4rem;
-    line-height: 1.6em;
-    color: #5a5a5a;
+    font-size: 16px;
+    margin: 0;
     background-color: #efefef;
 }
 
-.page-header {
-    position: absolute;
-    padding: 10px;
+
+.hero {
+    height: 100vh;
     width: 100%;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    z-index: 9;
+    transition: all 1.6s cubic-bezier(0.86, 0, 0.07, 1);
 }
 
-
-.page-logo {
-    margin: 0;
+.hero.scrolled {
+    transform: translate3d(0, -100%, 0) scale(.75);
+    opacity: 0;
 }
 
-.page-nav .hamburger {
-    background: 0;
-    border: 0;
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    width: 30px;
-    height: 30px;
+.hero-inner {
+    background-image: url(../img/nav-back.jpg);
+    background-size: cover;
+    background-position: center;
+    display: table;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
 }
 
-.page-nav .hamburger .close-icon {
-    display: none;
-    width: 14px;
-    cursor: pointer;
-}
-
-
-
-.page-nav .hamburger .hamburger-icon {
-    width: 18px;
-    height: 6px;
-    fill: #ffffff;
-    cursor: pointer;
-}
-
-.page-nav .hamburger .hamburger-icon:hover,
-.page-nav .hamburger .close-icon:hover {
-    fill: #be8596;
-}
-
-.author-photo {
+.hero-title {
+    display: table-cell;
+    vertical-align: middle;
     text-align: center;
 }
 
-.author-photo img {
-    height: 200px;
-    border-radius: 50%;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: montserrat;
 }
+
+.font-2 {
+    font-family: 'josefin sans';
+    font-weight: 700;
+}
+
+.title {
+    letter-spacing: .3em;
+    text-transform: uppercase;
+}
+
+.text-light {
+    color: #fff
+}
+
+.font-alt {
+    font-family: 'georgia';
+    font-style: italic;
+    color: #666;
+}
+
+.hero {
+    overflow: hidden;
+    z-index: 1;
+}
+
+.content {
+    position: relative;
+    background-color: #efefef;
+    border-top: 10px solid var(--dirty-pink);
+    padding: 0;
+    margin: 0;
+    transition: all 1.6s cubic-bezier(0.86, 0, 0.07, 1);
+    transform: translate3d(0, 20px, 0) scale(.75);
+    opacity: 0;
+}
+
+.content.scrolled {
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity: 1;
+}
+
+.sd {
+    color: #fff;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    opacity: .6;
+    transform: translateX(-50%);
+    transition: all 500ms ease-in-out;
+}
+
+.sd:hover,
+.sd:focus {
+    opacity: 1;
+    text-decoration: none;
+}
+
 
 .article-content {
     width: 94%;
@@ -80,34 +127,10 @@ body {
     box-sizing: border-box;
 }
 
-.article .article-header {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    background: url(../img/nav-back.jpg) no-repeat;
-    background-size: cover;
-    padding-top: 100px;
-    padding-bottom: 20px;
-    color: #ffffff;
-    text-align: center;
-    min-height: 100vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-flex: 1;
-    -ms-flex: 1 1 0px;
-    flex: 1 1 0;
-    margin-bottom: 30px;
-    -webkit-box-shadow: -1px 9px 19px -8px rgba(0, 148, 132, 0.4);
-    box-shadow: -1px 9px 19px -8px rgba(190, 133, 150, 0.7);
-}
 
 .article-title {
     margin: 0;
-    color: #00000;
+    color: #000000;
     font-weight: normal;
     font-size: 4.1rem;
     padding-bottom: 24px;
@@ -126,70 +149,7 @@ body {
     max-width: 100%;
 }
 
-.page-nav .navigation {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: none;
-    width: 100%;
-    text-align: center;
-}
 
-.page-nav .navigation li {
-    border-bottom: 1px solid #505050;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.page-nav .navigation li a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 1.6rem;
-    font-family: 'Playfair Display', serif;
-}
-
-.page-nav .navigation li a:hover {
-    color: #be8596;
-}
-
-.page-nav .navigation li.contact-button {
-    border: 0;
-    margin-top: 11px;
-}
-
-.page-nav .navigation li.contact-button a {
-    border: 2px solid #be8596;
-    padding: 10px;
-    padding-right: 20px;
-    padding-left: 20px;
-}
-
-.page-nav .navigation li.contact-button a:hover {
-    border: 2px solid #ffffff;
-}
-
-
-.page-header.nav-opened {
-    background: #283246;
-    -webkit-box-shadow: -1px 9px 19px -8px rgba(0, 0, 0, 0.7);
-    box-shadow: -1px 9px 19px -8px rgba(40, 50, 70, 0.7);
-}
-
-.page-header.nav-opened .page-nav .hamburger {
-    fill: #ffffff;
-}
-
-.page-header.nav-opened .page-nav .hamburger .hamburger-icon {
-    display: none;
-}
-
-.page-header.nav-opened .page-nav .hamburger .close-icon {
-    display: inline-block;
-}
-
-.page-header.nav-opened .navigation {
-    display: block;
-}
 
 .article-container {
     padding-top: 10px;
@@ -230,11 +190,11 @@ body {
 
 .page-footer .navigation li {
     margin-bottom: 25px;
-    font-size: 1.8rem;
+    font-size: 1.3em;
 }
 
 .page-footer .navigation li a {
-    color: #be8596;
+    color: var(--light-pink);
     text-decoration: none;
     font-family: 'Playfair Display', serif;
 }
@@ -249,6 +209,7 @@ body {
     margin: 0;
     margin-bottom: 5px;
     font-family: 'Playfair Display', serif;
+    font-size: 0.8em;
 }
 
 .scroll-down {
@@ -264,12 +225,6 @@ body {
     transform: rotate(360deg);
 }
 
-
-
-
-h2 {
-    font-family: 'Playfair Display', serif;
-}
 
 
 /* ------------------ IMAGE --------------- */
@@ -343,8 +298,8 @@ h2 {
 
 .ch-info .ch-info-back-1 {
     transform: translate3d(0, 0, -220px) rotate3d(1, 0, 0, 90deg);
-    background: #8f6c7d;
-    background: #62749c;
+    background: var(--dirty-pink);
+    background: var(--dirty-blue);
     opacity: 0;
 }
 
@@ -476,47 +431,82 @@ h2 {
     z-index: -1;
     top: 50%;
     width: 100%;
-    border-bottom: 2px solid #be8596;
+    border-bottom: 2px solid var(--light-pink);
 
 }
 
 
+.social-accs {
+    text-align: center;
+}
 
-@media only screen and (min-width: 40em) {
+.social-logo-1 {
+    margin: 0;
+    padding: 0;
+    width: 90px;
+    height: 90px;
+    background: url("../img/github.png") no-repeat;
+    background-size: cover;
+    display: inline-block;
+    transition: 1s;
+}
 
-    .page-nav {
-        position: absolute;
-        top: 20px;
-        right: 20px;
-    }
+.social-logo-1:hover {
+    background: url("../img/github_.png") no-repeat;
+    background-size: cover;
+}
 
-    .page-nav .hamburger {
-        display: none;
-    }
+.social-logo-2 {
+    margin: 0;
+    padding: 0;
+    width: 90px;
+    height: 90px;
+    background: url("../img/dribble.png") no-repeat;
+    background-size: cover;
+    display: inline-block;
+    transition: 1s;
+}
 
-    .page-nav .navigation {
-        display: block;
-    }
+.social-logo-2:hover {
+    background: url("../img/dribble_.png") no-repeat;
+    background-size: cover;
+}
 
-    .page-nav .navigation li {
-        display: inline-block;
-        padding: 0;
-        margin-right: 48px;
-        text-decoration: none;
-        border: none;
-    }
+.social-logo-3 {
+    margin: 0;
+    padding: 0;
+    width: 90px;
+    height: 90px;
+    background: url("../img/instagram.png") no-repeat;
+    background-size: cover;
+    display: inline-block;
+    transition: 1s;
+}
 
-    .page-nav .navigation li:last-child {
-        margin-right: 0;
-    }
+.social-logo-3:hover {
+    background: url("../img/instagram_.png") no-repeat;
+    background-size: cover;
+}
 
-    .page-logo img {
-        transition: transform 1.5s ease-in-out;
-    }
+.social-logo-4 {
+    margin: 0;
+    padding: 0;
+    width: 90px;
+    height: 90px;
+    background: url("../img/facebook.png") no-repeat;
+    background-size: cover;
+    display: inline-block;
+    transition: 1s;
+}
 
-    .page-logo:hover img {
-        transform: scale(1.1);
-        z-index: 0;
-    }
+.social-logo-4:hover {
+    background: url("../img/facebook_.png") no-repeat;
+    background-size: cover;
+}
 
+.social-logo-1,
+.social-logo-2,
+.social-logo-3,
+.social-logo-4 {
+    margin: 10px 16px 0px 16px;
 }
