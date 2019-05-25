@@ -14,6 +14,22 @@ body {
     font-size: 16px;
     margin: 0;
     background-color: #efefef;
+    color: #484848;
+}
+
+p a:link {
+    text-decoration: none;
+    color: #484848;
+    font-weight: 600;
+    scroll-behavior: smooth;
+}
+
+p a:visited {
+    color: #484848;
+}
+
+p a:hover {
+    color: var(--light-pink);
 }
 
 
@@ -42,6 +58,7 @@ body {
     top: 0;
 }
 
+
 .hero-title {
     display: table-cell;
     vertical-align: middle;
@@ -58,7 +75,7 @@ h6 {
 }
 
 .font-2 {
-    font-family: 'josefin sans';
+    font-family: 'Signika Negative', sans-serif;
     font-weight: 700;
 }
 
@@ -212,18 +229,6 @@ h6 {
     font-size: 0.8em;
 }
 
-.scroll-down {
-    z-index: 999;
-    transition: all 500ms ease-in-out;
-}
-
-.scroll-down:hover {
-    -ms-transform: rotate(360deg);
-    /* IE 9 */
-    -webkit-transform: rotate(360deg);
-    /* Chrome, Safari, Opera */
-    transform: rotate(360deg);
-}
 
 
 
