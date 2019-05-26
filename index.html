@@ -3,9 +3,15 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Responsive Web Design</title>
+    <title>Weronika Schabowicz Portfolio</title>
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='http://achtungthemes.com/gnoli/js/lib/scripts.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.0/SmoothScroll.min.js'></script>
 </head>
 
 <body>
@@ -36,7 +42,7 @@
             </div>
 
             <div class="article-content">
-                <p>My name is Weronika Schabowicz, currently living in Cracow, Poland, studying Applied Computer Science at AGH University of Science and Technology. My main field of interest is working as frontend developer, creating modern websites using HTML5, CSS, JavaScript and more. I'm also instrested in creating graphics using Inkscape, Adobe Photoshop or Figma.<br><br>
+                <p>My name is Weronika Schabowicz, currently living in Cracow, Poland, studying Applied Computer Science at AGH University of Science and Technology. My main field of interest is working as frontend developer, creating modern websites using HTML5, CSS, JavaScript and more. I'm also instrested in creating graphics using Inkscape, Adobe Photoshop or Figma.<br>
                     In my free time I'm all about exploring secrets of the astronomy, Japanese culture and best cuisines of the world.<br><br>
                     <a class="scroll-down" href="#contact">Get in touch with me</a> via mail or social media links listed below.
                 </p>
@@ -44,99 +50,149 @@
         </div>
 
         <div class="plate">
-            <p class="script"><span>My work</span></p>
+            <p class="script" id="mywork"><span>My work</span></p>
         </div>
-        <div class="article-container" id="mywork">
-            <ul class="ch-grid">
-                <li>
-                    <div class="ch-item">
-                        <div class="ch-info">
-                            <div class="ch-info-front ch-img-2"></div>
-                            <div class="ch-info-back-1">
-                                <h3>Coffee shop logo</h3>
-                                <p><a href="#">See on dribble</a></p>
+        <div class="article-content">
+            <p style="text-align: center">Here are some examples of graphics and pages I've created.
+            </p>
+
+            <div class="article-container">
+                <ul class="ch-grid">
+                    <li>
+                        <div class="ch-item">
+                            <div class="ch-info">
+                                <div class="ch-info-front ch-img-2"></div>
+                                <div class="ch-info-back-1">
+                                    <h3>Coffee shop logo</h3>
+                                    <p><a href="#">See on dribble</a></p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="ch-item">
-                        <div class="ch-info">
-                            <div class="ch-info-front ch-img-3"></div>
-                            <div class="ch-info-back-1">
-                                <h3>Rocketship logo</h3>
-                                <p><a href="#">See on dribble</a></p>
+                    </li>
+                    <li>
+                        <div class="ch-item">
+                            <div class="ch-info">
+                                <div class="ch-info-front ch-img-3"></div>
+                                <div class="ch-info-back-1">
+                                    <h3>Rocketship logo</h3>
+                                    <p><a href="#">See on dribble</a></p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="ch-item">
-                        <div class="ch-info">
-                            <div class="ch-info-front ch-img-4"></div>
-                            <div class="ch-info-back-1">
-                                <h3>Panda logo</h3>
-                                <p><a href="#">See on dribble</a></p>
+                    </li>
+                    <li>
+                        <div class="ch-item">
+                            <div class="ch-info">
+                                <div class="ch-info-front ch-img-4"></div>
+                                <div class="ch-info-back-1">
+                                    <h3>Panda logo</h3>
+                                    <p><a href="#">See on dribble</a></p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="ch-item">
-                        <div class="ch-info">
-                            <div class="ch-info-front ch-img-5"></div>
-                            <div class="ch-info-back-1">
-                                <h3>Driverless car logo</h3>
-                                <p><a href="#">See on dribble</a></p>
+                    </li>
+                    <li>
+                        <div class="ch-item">
+                            <div class="ch-info">
+                                <div class="ch-info-front ch-img-5"></div>
+                                <div class="ch-info-back-1">
+                                    <h3>Driverless car logo</h3>
+                                    <p><a href="#">See on dribble</a></p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="ch-item">
-                        <div class="ch-info">
-                            <div class="ch-info-front ch-img-6"></div>
-                            <div class="ch-info-back-1">
-                                <h3>Bubble logo</h3>
-                                <p><a href="#">See on dribble</a></p>
+                    </li>
+                    <li>
+                        <div class="ch-item">
+                            <div class="ch-info">
+                                <div class="ch-info-front ch-img-6"></div>
+                                <div class="ch-info-back-1">
+                                    <h3>Bubble logo</h3>
+                                    <p><a href="#">See on dribble</a></p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="ch-item">
-                        <div class="ch-info">
-                            <div class="ch-info-front ch-img-7"></div>
-                            <div class="ch-info-back-1">
-                                <h3>Geometric portrait</h3>
-                                <p><a href="#">See on dribble</a></p>
+                    </li>
+                    <li>
+                        <div class="ch-item">
+                            <div class="ch-info">
+                                <div class="ch-info-front ch-img-7"></div>
+                                <div class="ch-info-back-1">
+                                    <h3>Geometric portrait</h3>
+                                    <p><a href="#">See on dribble</a></p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="ch-item">
-                        <div class="ch-info">
-                            <div class="ch-info-front ch-img-8"></div>
-                            <div class="ch-info-back-1">
-                                <h3>Bubble logo</h3>
-                                <p><a href="#">See on dribble</a></p>
+                    </li>
+                    <li>
+                        <div class="ch-item">
+                            <div class="ch-info">
+                                <div class="ch-info-front ch-img-8"></div>
+                                <div class="ch-info-back-1">
+                                    <h3>Bubble logo</h3>
+                                    <p><a href="#">See on dribble</a></p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="ch-item">
-                        <div class="ch-info">
-                            <div class="ch-info-front ch-img-9"></div>
-                            <div class="ch-info-back-1">
-                                <h3>Fashion company logo</h3>
-                                <p><a href="#">See on dribble</a></p>
+                    </li>
+                    <li>
+                        <div class="ch-item">
+                            <div class="ch-info">
+                                <div class="ch-info-front ch-img-9"></div>
+                                <div class="ch-info-back-1">
+                                    <h3>Fashion company logo</h3>
+                                    <p><a href="#">See on dribble</a></p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </li>
-            </ul>
+                    </li>
+                    <li>
+                        <div class="ch-item">
+                            <div class="ch-info">
+                                <div class="ch-info-front ch-img-9"></div>
+                                <div class="ch-info-back-1">
+                                    <h3>Fashion company logo</h3>
+                                    <p><a href="#">See on dribble</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ch-item">
+                            <div class="ch-info">
+                                <div class="ch-info-front ch-img-9"></div>
+                                <div class="ch-info-back-1">
+                                    <h3>Fashion company logo</h3>
+                                    <p><a href="#">See on dribble</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ch-item">
+                            <div class="ch-info">
+                                <div class="ch-info-front ch-img-9"></div>
+                                <div class="ch-info-back-1">
+                                    <h3>Fashion company logo</h3>
+                                    <p><a href="#">See on dribble</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ch-item">
+                            <div class="ch-info">
+                                <div class="ch-info-front ch-img-9"></div>
+                                <div class="ch-info-back-1">
+                                    <h3>Fashion company logo</h3>
+                                    <p><a href="#">See on dribble</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div><br>
+            <p style="text-align:center;">View more on <a href="dribbble.com/veronimineral" target="_blank">dribbble</a>.</p>
 
         </div>
 
@@ -146,7 +202,7 @@
             </div>
 
             <div class="article-content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit voluptatibus consectetur tempore nihil dolor laboriosam modi obcaecati nostrum reprehenderit cupiditate, totam earum nisi excepturi enim saepe, illo, perspiciatis quis. Neque? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas dolores unde id molestias autem culpa, maxime qui mollitia ducimus assumenda facilis quod, sint reiciendis dolore deleniti sequi amet magnam cumque? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quam totam doloremque perspiciatis, expedita at aliquam maiores ut hic odio vero non quia reprehenderit magni cumque repellendus distinctio, veniam, sint.</p>
+                <p style="text-align: center;"><a href="https://veronimineral.github.io/portfolio/src/Weronika_Schabowicz_CV.pdf" target="_blank">See my CV.</a></p>
             </div>
         </div>
         <div class="article-container" id="contact">
@@ -174,21 +230,20 @@
             </div>
         </div>
         <footer class="page-footer">
-            <div class="separator"></div>
+            <br><br><br>
             <ul class="navigation">
                 <li><a href="#content">About me</a></li>
                 <li><a href="#mywork">My work</a></li>
                 <li><a href="#mycv">Curriculum vitae</a></li>
                 <li class="contact-button"><a href="#contact">Contact me</a></li>
             </ul><br>
+            <div class="plate--footer">
+                <p class="script" id="mywork"></p>
+            </div>
             <p class="copyright">&copy; Weronika Schabowicz 2019</p>
         </footer>
     </div>
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-    <script src='http://achtungthemes.com/gnoli/js/lib/scripts.js'></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js'></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.0/SmoothScroll.min.js'></script>
+
     <script src="js/script.js"></script>
 
 </body></html>

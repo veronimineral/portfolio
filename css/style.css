@@ -11,7 +11,7 @@
 
 body {
     font-family: 'Signika Negative', sans-serif;
-    font-size: 16px;
+    font-size: 15px;
     margin: 0;
     background-color: #efefef;
     color: #484848;
@@ -49,13 +49,12 @@ p a:hover {
 
 .hero-inner {
     background-image: url(../img/nav-back.jpg);
-    background-size: cover;
-    background-position: center;
     display: table;
     width: 100%;
     height: 100vh;
     position: fixed;
-    top: 0;
+
+    overflow: hidden;
 }
 
 
@@ -133,8 +132,10 @@ h6 {
 
 
 .article-content {
-    width: 94%;
+    width: 70%;
     margin: 0 auto;
+    text-align: justify;
+
 }
 
 .article-container,
@@ -254,8 +255,8 @@ h6 {
 }
 
 .ch-grid li {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     display: inline-block;
     margin: 0 10px 0 10px;
 }
@@ -374,10 +375,10 @@ h6 {
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-size: 21px;
+    font-size: 16px;
     margin: 0 15px;
     padding: 60px 0 0 0;
-    height: 110px;
+    height: 60px;
     font-family: 'Playfair Display', serif;
     text-shadow:
         0 0 1px #fff,
@@ -410,16 +411,32 @@ h6 {
 }
 
 .plate {
-    width: 50%;
+    width: 70%;
     margin: 3% auto;
 }
+
+.plate--footer {
+    margin-bottom: 10px;
+}
+
+.plate--footer .script:before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+}
+
 
 .script {
     font-family: 'Signika Negative', sans-serif;
     text-transform: uppercase;
     color: #5a5a5a;
     text-align: center;
-    font-size: 32px;
+    font-size: 24px;
     position: relative;
     margin: 0;
 }
@@ -448,8 +465,8 @@ h6 {
 .social-logo-1 {
     margin: 0;
     padding: 0;
-    width: 90px;
-    height: 90px;
+    width: 70px;
+    height: 70px;
     background: url("../img/github.png") no-repeat;
     background-size: cover;
     display: inline-block;
@@ -464,8 +481,8 @@ h6 {
 .social-logo-2 {
     margin: 0;
     padding: 0;
-    width: 90px;
-    height: 90px;
+    width: 70px;
+    height: 70px;
     background: url("../img/dribble.png") no-repeat;
     background-size: cover;
     display: inline-block;
@@ -480,8 +497,8 @@ h6 {
 .social-logo-3 {
     margin: 0;
     padding: 0;
-    width: 90px;
-    height: 90px;
+    width: 70px;
+    height: 70px;
     background: url("../img/instagram.png") no-repeat;
     background-size: cover;
     display: inline-block;
@@ -496,8 +513,8 @@ h6 {
 .social-logo-4 {
     margin: 0;
     padding: 0;
-    width: 90px;
-    height: 90px;
+    width: 70px;
+    height: 70px;
     background: url("../img/facebook.png") no-repeat;
     background-size: cover;
     display: inline-block;
