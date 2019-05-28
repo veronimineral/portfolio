@@ -6,244 +6,289 @@
     <title>Weronika Schabowicz Portfolio</title>
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="css/style.css" type="text/css">
-    <script src="//code.jquery.com/jquery-3.3.1.js"></script>
-    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-    <script src='//achtungthemes.com/gnoli/js/lib/scripts.js'></script>
-    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>
-    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js'></script>
-    <script src='//cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.0/SmoothScroll.min.js'></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src='http://achtungthemes.com/gnoli/js/lib/scripts.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.0/SmoothScroll.min.js'></script>
 </head>
 
 <body>
-    <div class="hero">
-        <div class="hero-inner">
-            <div class="hero-title">
-                <h1 class="text-light title font-2">weronika schabowicz</h1>
-                <p class="text-capitalize text-light">frontend &amp; graphics</p>
-            </div>
-            <a href="#" class="sd"><img src="img/scroll.png" height=35 alt="Scroll down"></a>
+    <div class="loader" id="loader">
+        <div class="lds-ripple">
+            <div></div>
+            <div></div>
         </div>
     </div>
-    <div class="content clearfix" id="content">
-        <div class="article-container" id="aboutme">
-            <ul class="ch-grid">
-                <li>
-                    <div class="ch-item">
-                        <div class="ch-info">
-                            <div class="ch-info-front ch-img-1"></div>
-                            <div class="ch-info-back">
-                            </div>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-            <div class="plate">
-                <p class="script"><span>About me</span></p>
-            </div>
-
-            <div class="article-content">
-                <p>My name is Weronika Schabowicz, currently living in Cracow, Poland, studying Applied Computer Science at AGH University of Science and Technology. My main field of interest is working as frontend developer, creating modern websites using HTML5, CSS, JavaScript and more. I'm also instrested in creating graphics using Inkscape, Adobe Photoshop or Figma.<br>
-                    In my free time I'm all about exploring secrets of the astronomy, Japanese culture and best cuisines of the world.<br><br>
-                    <a class="scroll-down" href="#contact">Get in touch with me</a> via mail or social media links listed below.
-                </p>
+    <div id=myPage class="animate-bottom">
+        <div class="hero">
+            <div class="box">
+                <div class="hero-title">
+                    <h1 class="text-light title font-2">weronika schabowicz</h1>
+                    <p class="text-capitalize text-light">frontend &amp; graphics</p>
+                </div>
+                <a href="#" class="sd"><img src="img/scroll.png" height=35 alt="Scroll down"></a>
             </div>
         </div>
-
-        <div class="plate">
-            <p class="script" id="mywork"><span>My work</span></p>
-        </div>
-        <div class="article-content">
-            <p style="text-align: center">Here are some examples of graphics and pages I've created.
-            </p>
-
-            <div class="article-container">
+        <div class="content clearfix" id="content">
+            <div class="article-container" id="aboutme">
                 <ul class="ch-grid">
                     <li>
                         <div class="ch-item">
                             <div class="ch-info">
-                                <div class="ch-info-front ch-img-2"></div>
-                                <div class="ch-info-back-1">
-                                    <h3>Coffee shop logo</h3>
-                                    <p><a href="#">See on dribble</a></p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="ch-item">
-                            <div class="ch-info">
-                                <div class="ch-info-front ch-img-3"></div>
-                                <div class="ch-info-back-1">
-                                    <h3>Rocketship logo</h3>
-                                    <p><a href="#">See on dribble</a></p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="ch-item">
-                            <div class="ch-info">
-                                <div class="ch-info-front ch-img-4"></div>
-                                <div class="ch-info-back-1">
-                                    <h3>Panda logo</h3>
-                                    <p><a href="#">See on dribble</a></p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="ch-item">
-                            <div class="ch-info">
-                                <div class="ch-info-front ch-img-5"></div>
-                                <div class="ch-info-back-1">
-                                    <h3>Driverless car logo</h3>
-                                    <p><a href="#">See on dribble</a></p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="ch-item">
-                            <div class="ch-info">
-                                <div class="ch-info-front ch-img-6"></div>
-                                <div class="ch-info-back-1">
-                                    <h3>Bubble logo</h3>
-                                    <p><a href="#">See on dribble</a></p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="ch-item">
-                            <div class="ch-info">
-                                <div class="ch-info-front ch-img-7"></div>
-                                <div class="ch-info-back-1">
-                                    <h3>Geometric portrait</h3>
-                                    <p><a href="#">See on dribble</a></p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="ch-item">
-                            <div class="ch-info">
-                                <div class="ch-info-front ch-img-8"></div>
-                                <div class="ch-info-back-1">
-                                    <h3>Bubble logo</h3>
-                                    <p><a href="#">See on dribble</a></p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="ch-item">
-                            <div class="ch-info">
-                                <div class="ch-info-front ch-img-9"></div>
-                                <div class="ch-info-back-1">
-                                    <h3>Fashion company logo</h3>
-                                    <p><a href="#">See on dribble</a></p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="ch-item">
-                            <div class="ch-info">
-                                <div class="ch-info-front ch-img-9"></div>
-                                <div class="ch-info-back-1">
-                                    <h3>Fashion company logo</h3>
-                                    <p><a href="#">See on dribble</a></p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="ch-item">
-                            <div class="ch-info">
-                                <div class="ch-info-front ch-img-9"></div>
-                                <div class="ch-info-back-1">
-                                    <h3>Fashion company logo</h3>
-                                    <p><a href="#">See on dribble</a></p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="ch-item">
-                            <div class="ch-info">
-                                <div class="ch-info-front ch-img-9"></div>
-                                <div class="ch-info-back-1">
-                                    <h3>Fashion company logo</h3>
-                                    <p><a href="#">See on dribble</a></p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="ch-item">
-                            <div class="ch-info">
-                                <div class="ch-info-front ch-img-9"></div>
-                                <div class="ch-info-back-1">
-                                    <h3>Fashion company logo</h3>
-                                    <p><a href="#">See on dribble</a></p>
+                                <div class="ch-info-front ch-img-1"></div>
+                                <div class="ch-info-back">
                                 </div>
                             </div>
                         </div>
                     </li>
                 </ul>
-            </div><br>
-            <p style="text-align:center;">View more on <a href="dribbble.com/veronimineral" target="_blank">dribbble</a>.</p>
-
-        </div>
-
-        <div class="article-container" id="mycv">
-            <div class="plate">
-                <p class="script"><span>Curriculum vitae</span></p>
-            </div>
-
-            <div class="article-content">
-                <p style="text-align: center;"><a href="https://veronimineral.github.io/portfolio/src/Weronika_Schabowicz_CV.pdf" target="_blank">See my CV.</a></p>
-            </div>
-        </div>
-        <div class="article-container" id="contact">
-            <div class="plate">
-                <p class="script"><span>Contact</span></p>
-            </div>
-
-            <div class="article-content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit voluptatibus consectetur tempore nihil dolor laboriosam modi obcaecati nostrum reprehenderit cupiditate, totam earum nisi excepturi enim saepe, illo, perspiciatis quis. Neque? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas dolores unde id molestias autem culpa, maxime qui mollitia ducimus assumenda facilis quod, sint reiciendis dolore deleniti sequi amet magnam cumque? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quam totam doloremque perspiciatis, expedita at aliquam maiores ut hic odio vero non quia reprehenderit magni cumque repellendus distinctio, veniam, sint.</p>
-                <div class="social-accs">
-                    <a href="https://github.com/veronimineral" target="_blank">
-                        <div class="social-logo-1"></div>
-                    </a>
-                    <a href="https://dribbble.com/veronimineral" target="_blank">
-                        <div class="social-logo-2"></div>
-                    </a>
-                    <a href="https://www.instagram.com/_veronimineral/" target="_blank">
-                        <div class="social-logo-3"></div>
-                    </a>
-                    <a href="https://www.facebook.com/weronika.schabowicz" target="_blank">
-                        <div class="social-logo-4"></div>
-                    </a>
+                <div class="plate">
+                    <p class="script"><span>About me</span></p>
                 </div>
 
+                <div class="article-content">
+                    <p>My name is Weronika Schabowicz, currently living in Cracow, Poland, studying <span>Applied Computer Science</span> at <span>AGH University of Science and Technology</span>. My main field of interest is working as frontend developer, creating modern websites using <span>HTML5, CSS, JavaScript</span> and more. I'm also instrested in creating graphics using <span>Inkscape, Adobe Photoshop</span> or <span>Figma</span>.<br>
+                        In my free time I'm all about exploring secrets of the astronomy, Japanese culture and best cuisines of the world.<br><br>
+                        Get in touch with me via mail or social media links listed <a href="#contact"> below</a>. <span id="span-1">Click<a href="https://veronimineral.github.io/portfolio/src/Weronika_Schabowicz_CV.pdf" target="_blank"> here </a> to see my CV.</span>
+                    </p>
+                </div>
             </div>
-        </div>
-        <footer class="page-footer">
-            <br><br><br>
-            <ul class="navigation">
-                <li><a href="#content">About me</a></li>
-                <li><a href="#mywork">My work</a></li>
-                <li><a href="#mycv">Curriculum vitae</a></li>
-                <li class="contact-button"><a href="#contact">Contact me</a></li>
-            </ul><br>
-            <div class="plate--footer">
-                <p class="script" id="mywork"></p>
-            </div>
-            <p class="copyright">&copy; Weronika Schabowicz 2019</p>
-        </footer>
-    </div>
 
+            <div class="plate">
+                <p class="script" id="mywork"><span>My work</span></p>
+            </div>
+            <div class="article-content">
+                <p>Here are some examples of graphics and logos I've created. See more on <a href="dribbble.com/veronimineral" target="_blank">dribbble</a>.</p>
+
+                <div class="article-container">
+                    <ul class="ch-grid">
+                        <li>
+                            <div class="ch-item-pic">
+                                <div class="ch-info-wrap-pic">
+                                    <div class="ch-info-pic">
+                                        <div class="ch-info-front-pic ch-img-2"></div>
+                                        <div class="ch-info-back-pic">
+                                            <h3>Coffee Shop Logo</h3>
+                                            <p><a href="https://dribbble.com/shots/6483501-Daily-Logo-Challenge-Day-6">See on dribble</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ch-item-pic">
+                                <div class="ch-info-wrap-pic">
+                                    <div class="ch-info-pic">
+                                        <div class="ch-info-front-pic ch-img-3"></div>
+                                        <div class="ch-info-back-pic">
+                                            <h3>Rocketship logo</h3>
+                                            <p><a href="https://dribbble.com/shots/6451817-Daily-Logo-Challenge-Day-1">See on dribble</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ch-item-pic">
+                                <div class="ch-info-wrap-pic">
+                                    <div class="ch-info-pic">
+                                        <div class="ch-info-front-pic ch-img-4"></div>
+                                        <div class="ch-info-back-pic">
+                                            <h3>Panda logo</h3>
+                                            <p><a href="https://dribbble.com/shots/6459573-Daily-Logo-Challenge-Day-3">See on dribble</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ch-item-pic">
+                                <div class="ch-info-wrap-pic">
+                                    <div class="ch-info-pic">
+                                        <div class="ch-info-front-pic ch-img-5"></div>
+                                        <div class="ch-info-back-pic">
+                                            <h3>Driverless car logo</h3>
+                                            <p><a href="https://dribbble.com/shots/6476190-Daily-Logo-Challenge-Day-5">See on dribble</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ch-item-pic">
+                                <div class="ch-info-wrap-pic">
+                                    <div class="ch-info-pic">
+                                        <div class="ch-info-front-pic ch-img-6"></div>
+                                        <div class="ch-info-back-pic">
+                                            <h3>Ski resort logo</h3>
+                                            <p><a href="https://dribbble.com/shots/6492459-Daily-Logo-Challenge-Day-8">See on dribble</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ch-item-pic">
+                                <div class="ch-info-wrap-pic">
+                                    <div class="ch-info-pic">
+                                        <div class="ch-info-front-pic ch-img-7"></div>
+                                        <div class="ch-info-back-pic">
+                                            <h3>Geometric portrait</h3>
+                                            <p><a href="https://dribbble.com/shots/6460007-Geometric-portrait">See on dribble</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ch-item-pic">
+                                <div class="ch-info-wrap-pic">
+                                    <div class="ch-info-pic">
+                                        <div class="ch-info-front-pic ch-img-8"></div>
+                                        <div class="ch-info-back-pic">
+                                            <h3>Geometric bolid</h3>
+                                            <p><a href="https://github.com/veronimineral/graphic-doodles/blob/master/grazaaa.png">See on github</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ch-item-pic">
+                                <div class="ch-info-wrap-pic">
+                                    <div class="ch-info-pic">
+                                        <div class="ch-info-front-pic ch-img-9"></div>
+                                        <div class="ch-info-back-pic">
+                                            <h3>Fashion company logo</h3>
+                                            <p><a href="https://dribbble.com/shots/6483755-Daily-Logo-Challenge-Day-7">See on dribble</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ch-item-pic">
+                                <div class="ch-info-wrap-pic">
+                                    <div class="ch-info-pic">
+                                        <div class="ch-info-front-pic ch-img-10"></div>
+                                        <div class="ch-info-back-pic">
+                                            <h3>Portrait</h3>
+                                            <p><a href="https://github.com/veronimineral/graphic-doodles/blob/master/pinkgirl.png">See on github</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ch-item-pic">
+                                <div class="ch-info-wrap-pic">
+                                    <div class="ch-info-pic">
+                                        <div class="ch-info-front-pic ch-img-11"></div>
+                                        <div class="ch-info-back-pic">
+                                            <h3>Vector kernel</h3>
+                                            <p><a href="https://github.com/veronimineral/graphic-doodles/blob/master/kernel.png">See on github</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ch-item-pic">
+                                <div class="ch-info-wrap-pic">
+                                    <div class="ch-info-pic">
+                                        <div class="ch-info-front-pic ch-img-12"></div>
+                                        <div class="ch-info-back-pic">
+                                            <h3>iPool</h3>
+                                            <p><a href="https://dribbble.com/shots/6460016-iPool">See on dribble</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ch-item-pic">
+                                <div class="ch-info-wrap-pic">
+                                    <div class="ch-info-pic">
+                                        <div class="ch-info-front-pic ch-img-13"></div>
+                                        <div class="ch-info-back-pic">
+                                            <h3>Isometric building art</h3>
+                                            <p><a href="https://github.com/veronimineral/graphic-doodles/blob/master/isometric.png">See on github</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div><br>
+
+            </div>
+
+            <div class="article-container" id="contact">
+                <div class="plate">
+                    <p class="script"><span>Contact</span></p>
+                </div>
+                <div class="article-content">
+                    <p>If you are interested, feel free to get in touch with me via email or my social media.</p>
+
+                    <div class="mail-container">
+                        <a href="mailto:weronikaschabowicz@gmail.com" target="_top">
+                            <div class="mail-box">
+                                <div class="icon">
+                                    <i class="far fa-envelope-open"></i>
+                                    <h4>Email</h4>
+                                    <h3 class="h3-small">weronikaschabowicz@gmail.com</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="mail-container">
+                        <a href="https://github.com/veronimineral" target="_blank">
+                            <div class="mail-box">
+                                <div class="icon">
+                                    <i class="fab fa-github"></i>
+                                    <h4>Github</h4>
+                                    <h3>@veronimineral</h3>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="https://dribbble.com/veronimineral" target="_blank">
+                            <div class="mail-box">
+                                <div class="icon">
+                                    <i class="fab fa-dribbble"></i>
+                                    <h4>Dribbble</h4>
+                                    <h3>@veronimineral</h3>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://www.instagram.com/_veronimineral/" target="_blank">
+                            <div class="mail-box">
+                                <div class="icon">
+                                    <i class="fab fa-instagram"></i>
+                                    <h4>Instagram</h4>
+                                    <h3>@_veronimineral</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <footer class="page-footer">
+
+                <div class="plate--footer">
+                    <p class="script" id="mywork"></p>
+                </div>
+                <p class="copyright">&copy; Weronika Schabowicz 2019</p>
+            </footer>
+        </div>
+    </div>
+    <script src="js/jquery.backgroundMove.js" type="text/javascript"></script>
     <script src="js/script.js"></script>
 
-</body></html>
+</body>
+
+</html>
