@@ -1,3 +1,27 @@
+function loadPage() {
+    setTimeout(showPage, 2000);
+};
+
+function showPage() {
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("myPage").style.display = "block";
+};
+
+loadPage();
+
+$(document).ready(function () {
+    $(window).scroll(function () {
+        var posTop = $(document).scrollTop();
+        if (posTop > 10 && posTop < 213) {
+            $('item-1').addClass('animated slideInUp');
+        }
+    });
+});
+
+$('.box').backgroundMove({
+    movementStrength: '15'
+});
+
 $('.sd').click(function () {
     $('.hero, .content').addClass('scrolled');
 });
@@ -24,11 +48,4 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             behavior: 'smooth'
         });
     });
-});
-
-$('.hero-inner').mousemove(function (e) {
-    var moveX = (e.pageX * +1 / 15);
-    var moveY = (e.pageY * -1 / 15);
-    $(this).css('background-position', moveX + 'px' + moveY + 'px');
-
 });
