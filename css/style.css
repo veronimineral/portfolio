@@ -176,6 +176,10 @@ h6 {
     color: #fff
 }
 
+.title {
+    letter-spacing: .3em;
+    text-transform: uppercase;
+}
 
 .hero {
     overflow: hidden;
