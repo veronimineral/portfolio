@@ -3,9 +3,16 @@
 @import url('https://fonts.googleapis.com/css?family=Signika+Negative&display=swap');
 
 :root {
+    --light-purple: #e0c3db;
+    --pastel-purple: #b6afdc;
+    --medium-purple: #8d86a6;
+    --medium-pink: #cf93a3;
+    --lavender: #a892b2;
+    --pastel-pink: #eab4b6;
     --light-pink: #be8596;
     --dirty-pink: #8f6c7d;
     --dirty-blue: #62749c;
+    --medium-blue: #7884ba;
 }
 
 
@@ -17,21 +24,107 @@ body {
     color: #484848;
 }
 
+.loader {
+    position: absolute;
+    right: 50%;
+    bottom: 50%;
+}
+
+.lds-ripple {
+    display: inline-block;
+    position: relative;
+    width: 64px;
+    height: 64px;
+}
+
+.lds-ripple div {
+    position: absolute;
+    border: 4px solid #8fa0ea;
+    opacity: 1;
+    border-radius: 50%;
+    animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+
+.lds-ripple div:nth-child(2) {
+    animation-delay: -0.5s;
+}
+
+@keyframes lds-ripple {
+    0% {
+        top: 28px;
+        left: 28px;
+        width: 0;
+        height: 0;
+        opacity: 1;
+    }
+
+    100% {
+        top: -1px;
+        left: -1px;
+        width: 58px;
+        height: 58px;
+        opacity: 0;
+    }
+}
+
+#myPage {
+    display: none;
+}
+
+.animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
+
+    to {
+        bottom: 0px;
+        opacity: 1
+    }
+}
+
+@keyframes animatebottom {
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
+
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+
+
+
+
+
 p a:link {
     text-decoration: none;
-    color: #484848;
-    font-weight: 600;
+    color: var(--light-pink);
     scroll-behavior: smooth;
 }
 
 p a:visited {
-    color: #484848;
-}
-
-p a:hover {
     color: var(--light-pink);
 }
 
+p a:hover {
+    color: #484848;
+}
+
+#span-1 {
+    font-weight: 600;
+    color: #484848;
+}
 
 .hero {
     height: 100vh;
@@ -47,14 +140,14 @@ p a:hover {
     opacity: 0;
 }
 
-.hero-inner {
+.box {
     background-image: url(../img/nav-back.jpg);
     display: table;
     width: 100%;
     height: 100vh;
     position: fixed;
-
     overflow: hidden;
+    background-repeat: no-repeat;
 }
 
 
@@ -78,20 +171,11 @@ h6 {
     font-weight: 700;
 }
 
-.title {
-    letter-spacing: .3em;
-    text-transform: uppercase;
-}
 
 .text-light {
     color: #fff
 }
 
-.font-alt {
-    font-family: 'georgia';
-    font-style: italic;
-    color: #666;
-}
 
 .hero {
     overflow: hidden;
@@ -135,7 +219,16 @@ h6 {
     width: 70%;
     margin: 0 auto;
     text-align: justify;
+    text-align-last: center;
 
+}
+
+.article-content span {
+    color: var(--light-pink);
+}
+
+.article-content span:hover {
+    color: inherit;
 }
 
 .article-container,
@@ -197,7 +290,6 @@ h6 {
 
 .page-footer {
     text-align: center;
-    margin-top: 42px;
 }
 
 .page-footer .navigation {
@@ -215,6 +307,7 @@ h6 {
     color: var(--light-pink);
     text-decoration: none;
     font-family: 'Playfair Display', serif;
+    transition: all 1s ease-in-out;
 }
 
 .page-footer .navigation li a:hover {
@@ -229,8 +322,6 @@ h6 {
     font-family: 'Playfair Display', serif;
     font-size: 0.8em;
 }
-
-
 
 
 /* ------------------ IMAGE --------------- */
@@ -280,6 +371,7 @@ h6 {
 }
 
 
+
 .ch-info > div {
     display: block;
     position: absolute;
@@ -291,10 +383,6 @@ h6 {
     transform-origin: 50% 0%;
 }
 
-
-
-
-
 .ch-info .ch-info-back {
     transform: translate3d(0, 0, -220px) rotate3d(1, 0, 0, 90deg);
     background-image: url(../img/toja.jpg);
@@ -302,71 +390,14 @@ h6 {
     opacity: 0;
 }
 
-.ch-info .ch-info-back-1 {
-    transform: translate3d(0, 0, -220px) rotate3d(1, 0, 0, 90deg);
-    background: var(--dirty-pink);
-    background: var(--dirty-blue);
-    opacity: 0;
-}
-
-
-
-.ch-img-1 {
-    background-image: url(../img/avatar.png);
-    background-size: cover;
-}
-
-.ch-img-2 {
-    background-image: url(../img/logo1.png);
-    background-size: cover;
-}
-
-.ch-img-3 {
-    background: #fff;
-    background-image: url(../img/logo2.png);
-    background-size: cover;
-}
-
-.ch-img-4 {
-    background-image: url(../img/logo3.png);
-    background-size: 110%;
-}
-
-.ch-img-5 {
-    background-image: url(../img/logo4.png);
-    background-size: cover;
-}
-
-.ch-img-6 {
-    background-image: url(../img/logo5.png);
-    background-size: cover;
-}
-
-.ch-img-7 {
-    background-image: url(../img/logo6.png);
-    background-size: cover;
-}
-
-.ch-img-8 {
-    background-image: url(../img/logo8.png);
-    background-size: cover;
-}
-
-.ch-img-9 {
-    background-image: url(../img/logo9.png);
-    background-size: cover;
-}
-
-
-
-
 .ch-item:hover .ch-info-front {
     transform: translate3d(0, 280px, 0) rotate3d(1, 0, 0, -90deg);
     opacity: 0;
 }
 
 .ch-item:hover .ch-info-back,
-.ch-item:hover .ch-info-back-1 {
+.ch-item:hover .ch-info-back-1,
+.ch-item:hover .ch-info-back-3 {
     transform: rotate3d(1, 0, 0, 0deg);
     opacity: 1;
 }
@@ -409,6 +440,276 @@ h6 {
 .ch-info p a:hover {
     color: rgba(207, 147, 163, 1);
 }
+
+
+.ch-item-pic {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.ch-info-wrap-pic {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    perspective: 800px;
+    transition: all 0.4s ease-in-out;
+    top: 10px;
+    left: 10px;
+    background: url(../img/logo1.png);
+    box-shadow:
+        0 0 0 10px rgba(255, 255, 255, 0.4);
+
+}
+
+.ch-info-pic {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    transition: all 0.4s ease-in-out;
+    transform-style: preserve-3d;
+}
+
+.ch-info-pic > div {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-position: center center;
+    backface-visibility: hidden;
+}
+
+.ch-info-pic .ch-info-back-pic {
+    transform: rotate3d(0, 1, 0, 180deg);
+    background: var(--light-pink);
+}
+
+.ch-info-pic h3 {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+    margin: 0 15px;
+    padding: 40px 0 0 0;
+    height: 90px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    text-shadow:
+        0 0 1px #fff,
+        0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.ch-info-pic p {
+    color: #fff;
+    padding: 5px 5px;
+    font-style: italic;
+    margin: 0 30px;
+    font-size: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.ch-info-pic p a {
+    display: block;
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 9px;
+    letter-spacing: 1px;
+    padding-top: 2px;
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.ch-info-pic p a:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+.ch-item-pic:hover .ch-info-wrap-pic {
+    box-shadow:
+        0 0 0 0 rgba(255, 255, 255, 0.8),
+        inset 0 0 3px rgba(115, 114, 23, 0.8);
+}
+
+.ch-item-pic:hover .ch-info-pic {
+    transform: rotate3d(0, 1, 0, -180deg);
+}
+
+.mail-container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.mail-container a {
+    text-decoration: none;
+    color: inherit;
+    width: 25%;
+}
+
+.mail-container .mail-box {
+    text-align: center;
+    margin: 0 20px;
+}
+
+
+.mail-container .mail-box .icon .far,
+.mail-container .mail-box .icon .fab {
+    font-size: 60px;
+    cursor: pointer;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.mail-container .mail-box .icon .far:hover,
+.mail-container .mail-box .icon .fab:hover {
+    font-size: 60px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    background: -webkit-linear-gradient(#7884ba, #be8596);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.mail-container .mail-box .icon h3,
+.mail-container .mail-box .icon h4 {
+    position: relative;
+    overflow: hidden;
+    font-family: 'Signika Negative', sans-serif;
+    margin: 0;
+    padding: 2px 5px;
+    font-size: 16px;
+    transition-delay: 0.3333s;
+    color: transparent;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.mail-container .mail-box .icon h3 {
+    font-size: 13px;
+}
+
+.mail-container .mail-box .icon .h3-small {
+    font-size: 11px;
+}
+
+.mail-container .mail-box .icon h4 {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.mail-container .mail-box .far:hover ~ h3,
+.mail-container .mail-box .far:hover ~ h4,
+.mail-container .mail-box .fab:hover ~ h3,
+.mail-container .mail-box .fab:hover ~ h4 {
+    color: #484848;
+}
+
+.mail-container .mail-box .icon h3:before,
+.mail-container .mail-box .icon h4:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--medium-blue);
+    transition: 1s;
+
+}
+
+.mail-container .mail-box .icon h4:before {
+    left: initial;
+    right: 100%;
+    background-color: var(--light-pink);
+}
+
+.mail-container .mail-box .far:hover ~ h3:before,
+.mail-container .mail-box .fab:hover ~ h3:before {
+    left: -100%;
+}
+
+.mail-container .mail-box .far:hover ~ h4:before,
+.mail-container .mail-box .fab:hover ~ h4:before {
+    left: initial;
+    right: -100%;
+}
+
+
+.ch-img-1 {
+    background-image: url(../img/avatar.png);
+    background-size: cover;
+}
+
+.ch-img-2 {
+    background-image: url(../img/logo1.png);
+    background-size: cover;
+}
+
+.ch-img-3 {
+    background: #fff;
+    background-image: url(../img/logo2.png);
+    background-size: cover;
+}
+
+.ch-img-4 {
+    background-image: url(../img/logo3.png);
+    background-size: 110%;
+}
+
+.ch-img-5 {
+    background-image: url(../img/logo4.png);
+    background-size: cover;
+}
+
+.ch-img-6 {
+    background-image: url(../img/logo8.png);
+    background-size: cover;
+}
+
+.ch-img-7 {
+    background-image: url(../img/logo6.png);
+    background-size: cover;
+}
+
+.ch-img-8 {
+    background-image: url(../img/grazaaa.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.ch-img-9 {
+    background-image: url(../img/logo9.png);
+    background-size: cover;
+}
+
+.ch-img-10 {
+    background-image: url(../img/pinkgirl.png);
+    background-size: cover;
+}
+
+.ch-img-11 {
+    background-image: url(../img/kernel.png);
+    background-size: cover;
+}
+
+.ch-img-12 {
+    background-image: url(../img/pool.png);
+    background-size: cover;
+}
+
+.ch-img-13 {
+    background-image: url(../img/isometric.png);
+    background-size: cover;
+}
+
 
 .plate {
     width: 70%;
