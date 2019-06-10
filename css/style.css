@@ -407,148 +407,11 @@ h6 {
     opacity: 0;
 }
 
-.ch-item:hover .ch-info-back,
-.ch-item:hover .ch-info-back-1,
-.ch-item:hover .ch-info-back-3 {
+.ch-item:hover .ch-info-back {
     transform: rotate3d(1, 0, 0, 0deg);
     opacity: 1;
 }
 
-.ch-info h3 {
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 16px;
-    margin: 0 15px;
-    padding: 60px 0 0 0;
-    height: 60px;
-    font-family: 'Playfair Display', serif;
-    text-shadow:
-        0 0 1px #fff,
-        0 1px 2px rgba(0, 0, 0, 0.3);
-}
-
-.ch-info p {
-    color: #fff;
-    padding: 10px 5px;
-    font-style: italic;
-    margin: 0 30px;
-    font-size: 12px;
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
-}
-
-.ch-info p a {
-    display: block;
-    color: rgba(255, 255, 255, 0.7);
-    font-style: normal;
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: 11px;
-    letter-spacing: 1px;
-    padding-top: 4px;
-    font-family: 'Playfair Display', serif;
-}
-
-.ch-info p a:hover {
-    color: rgba(207, 147, 163, 1);
-}
-
-
-.ch-item-pic {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    position: relative;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-}
-
-.ch-info-wrap-pic {
-    position: absolute;
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    perspective: 800px;
-    transition: all 0.4s ease-in-out;
-    top: 10px;
-    left: 10px;
-    background: url(../img/logo1.png);
-    box-shadow:
-        0 0 0 10px rgba(255, 255, 255, 0.4);
-
-}
-
-.ch-info-pic {
-    position: absolute;
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    transition: all 0.4s ease-in-out;
-    transform-style: preserve-3d;
-}
-
-.ch-info-pic > div {
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    background-position: center center;
-    backface-visibility: hidden;
-}
-
-.ch-info-pic .ch-info-back-pic {
-    transform: rotate3d(0, 1, 0, 180deg);
-    background: var(--light-pink);
-}
-
-.ch-info-pic h3 {
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 14px;
-    margin: 0 15px;
-    padding: 40px 0 0 0;
-    height: 90px;
-    font-family: 'Open Sans', Arial, sans-serif;
-    text-shadow:
-        0 0 1px #fff,
-        0 1px 2px rgba(0, 0, 0, 0.3);
-}
-
-.ch-info-pic p {
-    color: #fff;
-    padding: 5px 5px;
-    font-style: italic;
-    margin: 0 30px;
-    font-size: 12px;
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
-}
-
-.ch-info-pic p a {
-    display: block;
-    color: rgba(255, 255, 255, 0.6);
-    font-style: normal;
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: 9px;
-    letter-spacing: 1px;
-    padding-top: 2px;
-    font-family: 'Open Sans', Arial, sans-serif;
-}
-
-.ch-info-pic p a:hover {
-    color: rgba(255, 255, 255, 1);
-}
-
-.ch-item-pic:hover .ch-info-wrap-pic {
-    box-shadow:
-        0 0 0 0 rgba(255, 255, 255, 0.8),
-        inset 0 0 3px rgba(115, 114, 23, 0.8);
-}
-
-.ch-item-pic:hover .ch-info-pic {
-    transform: rotate3d(0, 1, 0, -180deg);
-}
 
 .mail-container {
     width: 100%;
@@ -775,83 +638,126 @@ h6 {
 }
 
 
-.social-accs {
-    text-align: center;
-}
-
-.social-logo-1 {
-    margin: 0;
-    padding: 0;
-    width: 70px;
-    height: 70px;
-    background: url("../img/github.png") no-repeat;
-    background-size: cover;
-    display: inline-block;
-    transition: 1s;
-}
-
-.social-logo-1:hover {
-    background: url("../img/github_.png") no-repeat;
-    background-size: cover;
-}
-
-.social-logo-2 {
-    margin: 0;
-    padding: 0;
-    width: 70px;
-    height: 70px;
-    background: url("../img/dribble.png") no-repeat;
-    background-size: cover;
-    display: inline-block;
-    transition: 1s;
-}
-
-.social-logo-2:hover {
-    background: url("../img/dribble_.png") no-repeat;
-    background-size: cover;
-}
-
-.social-logo-3 {
-    margin: 0;
-    padding: 0;
-    width: 70px;
-    height: 70px;
-    background: url("../img/instagram.png") no-repeat;
-    background-size: cover;
-    display: inline-block;
-    transition: 1s;
-}
-
-.social-logo-3:hover {
-    background: url("../img/instagram_.png") no-repeat;
-    background-size: cover;
-}
-
-.social-logo-4 {
-    margin: 0;
-    padding: 0;
-    width: 70px;
-    height: 70px;
-    background: url("../img/facebook.png") no-repeat;
-    background-size: cover;
-    display: inline-block;
-    transition: 1s;
-}
-
-.social-logo-4:hover {
-    background: url("../img/facebook_.png") no-repeat;
-    background-size: cover;
-}
-
-.social-logo-1,
-.social-logo-2,
-.social-logo-3,
-.social-logo-4 {
-    margin: 10px 16px 0px 16px;
-}
 
 @media only screen and (max-width: 960px) {
     .mail-container {
         display: block;
+    }
+}
+
+
+.article-content:nth-child(3) {
+    width: 90%;
+}
+
+.row {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+
+.column {
+    flex: 33.3%;
+    max-width: 32%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    transition: all 0.6s ease-in;
+}
+
+.my-image {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.6s ease-in;
+    padding: 0;
+    text-align: center;
+}
+
+.overlay h3,
+.overlay a {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    text-decoration: none;
+}
+
+.overlay h3 {
+    top: 40%;
+    font-size: 1.4em;
+    color: var(--light-pink);
+}
+
+.overlay a {
+    top: 60%;
+    font-size: 1.1em;
+}
+
+.overlay[id="small-pic"] h3 {
+    top: 35%;
+}
+
+.overlay[id="small-pic"] a {
+    top: 65%;
+}
+
+.overlay a:link,
+.overlay a:visited,
+.overlay a:active {
+    color: #fff;
+}
+
+
+/* mouse over link */
+.overlay a:hover {
+    font-weight: 600;
+    color: var(--light-pink);
+}
+
+
+
+.column .my-image:hover img {
+    filter: blur(3px);
+    -webkit-filter: brightness(40%);
+}
+
+
+.column .my-image:hover .overlay {
+    opacity: 1;
+}
+
+
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 48%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 98%;
     }
 }
