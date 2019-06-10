@@ -692,54 +692,27 @@ h6 {
     text-align: center;
 }
 
-.overlay h3,
-.overlay a {
+.overlay h3 {
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80%;
     text-decoration: none;
-}
-
-.overlay h3 {
-    top: 40%;
+    top: 50%;
     font-size: 1.4em;
     color: var(--light-pink);
+    margin: 0;
 }
 
-.overlay a {
-    top: 60%;
-    font-size: 1.1em;
-}
-
-.overlay[id="small-pic"] h3 {
-    top: 35%;
-}
-
-.overlay[id="small-pic"] a {
-    top: 65%;
-}
-
-.overlay a:link,
-.overlay a:visited,
-.overlay a:active {
+.overlay h3:hover {
+    font-weight: 600;
     color: #fff;
 }
-
-
-/* mouse over link */
-.overlay a:hover {
-    font-weight: 600;
-    color: var(--light-pink);
-}
-
-
 
 .column .my-image:hover img {
     filter: blur(3px);
     -webkit-filter: brightness(40%);
 }
-
 
 .column .my-image:hover .overlay {
     opacity: 1;
