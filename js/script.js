@@ -1,4 +1,5 @@
-function loadPage() {
+(function() {
+   function loadPage() {
     setTimeout(showPage, 2000);
 };
 
@@ -16,10 +17,6 @@ $(document).ready(function () {
             $('item-1').addClass('animated slideInUp');
         }
     });
-});
-
-$('.box').backgroundMove({
-    movementStrength: '15'
 });
 
 $('.sd').click(function () {
@@ -49,3 +46,5 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+})();
