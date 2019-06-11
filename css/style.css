@@ -184,12 +184,11 @@ h6 {
     color: #fff;
     font-size: 34px;
     font-weight: 700;
-    background: linear-gradient(to right, #697dff 10%,#fff 50%,#8bb3ff 60%);
+    background: linear-gradient(to right, #697dff 10%, #fff 50%, #8bb3ff 60%);
     background-size: auto auto;
     background-clip: border-box;
     background-size: 200% auto;
     text-transform: uppercase;
-    color: #fff;
     background-clip: text;
     text-fill-color: transparent;
     -webkit-background-clip: text;
